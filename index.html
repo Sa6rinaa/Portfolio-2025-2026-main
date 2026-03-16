@@ -212,42 +212,68 @@
 
 <section class="skills-wrapper">
 
-  <div class="skills-title">Outils, Technologies & Méthodologies</div>
+  
 
   <div class="skills-scroller">
 
-    <!-- Outils -->
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white"> Git / GitHub
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Composer-885630?style=for-the-badge&logo=composer&logoColor=white"> Composer
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white"> MySQL / SQLite
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white"> Postman / Insomnia
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white"> Figma
-    </div>
-    <div class="skill-item">
-      <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white"> Docker (débutant)
-    </div>
+    <section id="outils-methodo" class="section-outils">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Outils & Méthodologies</h2>
+            <p class="section-subtitle">Les environnements techniques et méthodes de travail que j'utilise</p>
+        </div>
 
-    <!-- Méthodo -->
-    <div class="skill-item"><span class="skill-icon">🏗️</span> Architecture MVC</div>
-    <div class="skill-item"><span class="skill-icon">🔌</span> REST API</div>
-    <div class="skill-item"><span class="skill-icon">🎨</span> UX/UI Design</div>
-    <div class="skill-item"><span class="skill-icon">📡</span> Veille technologique</div>
-    <div class="skill-item"><span class="skill-icon">⚡</span> Gestion Agile</div>
+        <div class="outils-grid">
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="Git">
+                </div>
+                <h3>GESTION DE VERSION</h3>
+                <p>Maîtrise de <strong>Git</strong> et <strong>GitHub</strong> pour le versionnage de code, la gestion des branches et le travail collaboratif.</p>
+            </div>
 
-  </div>
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <span class="icon-text">MVC</span>
+                </div>
+                <h3>ARCHITECTURE LOGICIELLE</h3>
+                <p>Conception d'applications basées sur le pattern <strong>MVC</strong> pour une séparation claire entre la logique, les données et l'interface.</p>
+            </div>
 
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="SQL">
+                </div>
+                <h3>BASES DE DONNÉES</h3>
+                <p>Gestion et administration de bases de données relationnelles avec <strong>MySQL</strong> et <strong>SQLite</strong> (scripts SQL, Composer).</p>
+            </div>
+
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <span class="icon-text">API</span>
+                </div>
+                <h3>DÉVELOPPEMENT D'API</h3>
+                <p>Création et test d'<strong>API RESTful</strong>. Utilisation de <strong>Postman</strong> et Insomnia pour la validation des endpoints.</p>
+            </div>
+
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" alt="Figma">
+                </div>
+                <h3>UX / UI DESIGN</h3>
+                <p>Conception de maquettes et prototypes interactifs sur <strong>Figma</strong> en respectant les principes d'ergonomie et d'accessibilité.</p>
+            </div>
+
+            <div class="outil-card">
+                <div class="outil-icon-circle">
+                    <span class="icon-text">⚡</span>
+                </div>
+                <h3>MÉTHODES & VEILLE</h3>
+                <p>Organisation du travail via la <strong>Gestion Agile</strong> et maintien d'une <strong>Veille technologique</strong> constante sur l'IA et le dev.</p>
+            </div>
+        </div>
+    </div>
 </section>
-
-
   
     <!-- Section Certifications -->
     <section id="certifications" class="section-certifications">
@@ -296,259 +322,245 @@
     </section>
 
    <!-- Section Projets -->
-    <section id="projets" class="section-projets">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Mes Projets</h2>
-                <p class="section-subtitle">Réalisations et travaux personnels</p>
-            </div>
-            
-            <div class="projets-grid">
-                <!-- Projet 1 -->
-                <article class="projet-card">
-                    <div class="projet-image"></div>
-                    <div class="projet-content">
-                        <h3 class="projet-title">API Citations - Septembre 2025</h3>
-                     <p class="projet-description"> Développement d'une API REST complète pour gérer des citations. <br>L'API 
-permet de créer, lire, modifier et supprimer des citations via <br>des endpoints RESTful. </p>
-                 <div class="projet-technologies">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">SQLite / MySQL</span>
-                            <span class="tech-tag">JSON</span>
-                            <span class="tech-tag">Postman</span>
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project" onclick="openModal('projet1'); return false;">Voir le projet</a>
-                            <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Projet 2 -->
-                <article class="projet-card">
-                    <div class="projet-image"></div>
-                    <div class="projet-content">
-                        <h3 class="projet-title">Atelier Figma TechSolutions - Septembre 2025</h3>
-                       <p class="projet-description"> Conception d'un outil de gestion de tickets IT pour l'entreprise fictive <br>
-TechSolutions. Projet complet suivant une méthodologie UX professionnelle,<br> de l'analyse 
-des besoins utilisateurs jusqu'au prototype interactif. </p>
-   <div class="projet-technologies">
-                            <span class="tech-tag">Figma (composants, Auto-layout)</span>
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project" onclick="openModal('projet2'); return false;">Voir le projet</a>
-                            <a href="https://github.com/Sa6rinaa/figma-techsolutions" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-                
-                <!-- Projet 3 -->
-                <article class="projet-card">
-                    <div class="projet-image"></div>
-                    <div class="projet-content">
-                        <h3 class="projet-title">Atelier Accessibilité Web - RGAA 4.1.2</h3>
-                       <p class="projet-description">Forme aux bonnes pratiques d'accessibilité web conformément au RGAA 4.1.2<br> (Référentiel Général d'Amélioration de l'Accessibilité).<br><br></p>
-                          <div class="projet-technologies">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                        </div>
-                        <div class="projet-links">
-                            <a href="#" class="btn btn-project" onclick="openModal('projet3'); return false;">Voir le projet</a>
-                            <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilit-web-rgaa-4-1-2-Sa6rinaa" class="btn btn-github">Code source</a>
-                        </div>
-                    </div>
-                </article>
-            </div>
+   <section id="projets" class="section-projets">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Mes Projets</h2>
         </div>
         
+        <div class="projets-grid">
+            <article class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">API Citations - Septembre 2025</h3>
+                    <p class="projet-description">
+                        Développement d'une API REST complète pour gérer des citations. <br>
+                        L'API permet de créer, lire, modifier et supprimer des citations via endpoints RESTful.
+                    </p>
+                    <div class="projet-technologies">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">SQLite / MySQL</span>
+                        <span class="tech-tag">JSON</span>
+                        <span class="tech-tag">Postman</span>
+                    </div>
+                    <div class="projet-links">
+                        <a href="#" class="btn btn-project" onclick="openModal('projet1'); return false;">Voir le projet</a>
+                        <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn btn-github">Code source</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Atelier Figma TechSolutions - Septembre 2025</h3>
+                    <p class="projet-description">
+                        Conception d'un outil de gestion de tickets IT pour TechSolutions. <br>
+                        Projet suivant une méthodologie UX professionnelle, du besoin au prototype interactif.
+                    </p>
+                    <div class="projet-technologies">
+                        <span class="tech-tag">Figma (composants, Auto-layout)</span>
+                    </div>
+                    <div class="projet-links">
+                        <a href="#" class="btn btn-project" onclick="openModal('projet2'); return false;">Voir le projet</a>
+                        <a href="https://github.com/Sa6rinaa/figma-techsolutions" class="btn btn-github">Code source</a>
+                    </div>
+                </div>
+            </article>
+            
+            <article class="projet-card">
+                <div class="projet-image"></div>
+                <div class="projet-content">
+                    <h3 class="projet-title">Atelier Accessibilité Web - RGAA 4.1.2</h3>
+                    <p class="projet-description">
+                        Forme aux bonnes pratiques d'accessibilité web conformément au RGAA 4.1.2 <br>
+                        (Référentiel Général d'Amélioration de l'Accessibilité).
+                    </p>
+                    <div class="projet-technologies">
+                        <span class="tech-tag">HTML</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                    </div>
+                    <div class="projet-links">
+                        <a href="#" class="btn btn-project" onclick="openModal('projet3'); return false;">Voir le projet</a>
+                        <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilit-web-rgaa-4-1-2-Sa6rinaa" class="btn btn-github">Code source</a>
+                    </div>
+                </div>
+            </article>
+        </div>
+
         <div class="carousel-controls">
             <button class="carousel-btn" onclick="scrollProjects(-400)">⟵</button>
             <button class="carousel-btn" onclick="scrollProjects(400)">⟶</button>
         </div>
-    </section>
 
-    <!-- Modal Projet 1 -->
-    <div id="modal-projet1" class="modal-overlay" onclick="closeModal(event, 'projet1')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="modal-header">
-                <button class="modal-close" onclick="closeModal(event, 'projet1')">×</button>
-                <h2>API Citations</h2>
-                <p class="project-date">Septembre 2025</p>
-            </div>
-            
-            <div class="modal-body">
-                <div class="modal-section">
-                    <h3>Description</h3>
-                    <p>API RESTful complète permettant la gestion de citations avec opérations CRUD (Create, Read, Update, Delete). Le projet inclut une architecture MVC bien structurée et une documentation API complète.</p>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Fonctionnalités principales</h3>
-                    <ul>
-                        <li>Création de nouvelles citations avec auteur et catégorie</li>
-                        <li>Lecture et recherche de citations par différents critères</li>
-                        <li>Modification des citations existantes</li>
-                        <li>Suppression de citations</li>
-                        <li>Pagination des résultats</li>
-                        <li>Filtrage par auteur ou catégorie</li>
-                        <li>API entièrement documentée avec Postman</li>
-                    </ul>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-technologies">
-                        <span class="tech-tag">Node.js</span>
-                        <span class="tech-tag">Express.js</span>
-                        <span class="tech-tag">SQLite</span>
-                        <span class="tech-tag">MySQL</span>
-                        <span class="tech-tag">JSON</span>
-                        <span class="tech-tag">Postman</span>
-                        <span class="tech-tag">REST API</span>
-                    </div>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Compétences développées</h3>
-                    <ul>
-                        <li>Conception d'architecture RESTful</li>
-                        <li>Gestion de bases de données relationnelles</li>
-                        <li>Validation et sécurisation des données</li>
-                        <li>Tests d'API avec Postman</li>
-                        <li>Documentation technique</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn-project">Voir le projet en ligne</a>
-                <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn-github">Code source GitHub</a>
-            </div>
+        <div class="projet-image-placeholder">
+             <p class="section-subtitle">Réalisations et travaux personnels</p>
         </div>
     </div>
+</section>
 
-    <!-- Modal Projet 2 -->
-    <div id="modal-projet2" class="modal-overlay" onclick="closeModal(event, 'projet2')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="modal-header">
-                <button class="modal-close" onclick="closeModal(event, 'projet2')">×</button>
-                <h2>Atelier Figma TechSolutions</h2>
-                <p class="project-date">Septembre 2025</p>
+<div id="modal-projet1" class="modal-overlay" onclick="closeModal(event, 'projet1')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <button class="modal-close" onclick="closeModal(event, 'projet1')">×</button>
+            <h2>API Citations</h2>
+            <p class="project-date">Septembre 2025</p>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>Description</h3>
+                <p>API RESTful complète permettant la gestion de citations avec opérations CRUD (Create, Read, Update, Delete). Le projet inclut une architecture MVC bien structurée et une documentation API complète.</p>
             </div>
-            
-            <div class="modal-body">
-                <div class="modal-section">
-                    <h3>Description</h3>
-                    <p>Projet de conception UX/UI complet pour un système de gestion de tickets IT destiné à l'entreprise fictive TechSolutions. Le projet suit une méthodologie professionnelle complète, de la recherche utilisateur au prototype interactif.</p>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Fonctionnalités principales</h3>
-                    <ul>
-                        <li>Dashboard administrateur avec statistiques en temps réel</li>
-                        <li>Système de création et suivi de tickets</li>
-                        <li>Attribution et gestion des priorités</li>
-                        <li>Notifications et alertes</li>
-                        <li>Historique détaillé des interventions</li>
-                        <li>Interface responsive (desktop, tablette, mobile)</li>
-                        <li>Prototype interactif avec transitions animées</li>
-                    </ul>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Technologies et méthodes</h3>
-                    <div class="modal-technologies">
-                        <span class="tech-tag">Figma</span>
-                        <span class="tech-tag">Composants réutilisables</span>
-                        <span class="tech-tag">Auto-layout</span>
-                        <span class="tech-tag">Prototypage</span>
-                        <span class="tech-tag">Design System</span>
-                        <span class="tech-tag">UX Research</span>
-                    </div>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Processus de conception</h3>
-                    <ul>
-                        <li>Analyse des besoins utilisateurs et personas</li>
-                        <li>Architecture de l'information</li>
-                        <li>Wireframing et maquettes basse fidélité</li>
-                        <li>Design system et charte graphique</li>
-                        <li>Maquettes haute fidélité</li>
-                        <li>Prototype interactif et tests utilisateurs</li>
-                    </ul>
+            <div class="modal-section">
+                <h3>Fonctionnalités principales</h3>
+                <ul>
+                    <li>Création de nouvelles citations avec auteur et catégorie</li>
+                    <li>Lecture et recherche de citations par différents critères</li>
+                    <li>Modification des citations existantes</li>
+                    <li>Suppression de citations</li>
+                    <li>Pagination des résultats</li>
+                    <li>Filtrage par auteur ou catégorie</li>
+                    <li>API entièrement documentée avec Postman</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>Technologies utilisées</h3>
+                <div class="modal-technologies">
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">Express.js</span>
+                    <span class="tech-tag">SQLite</span>
+                    <span class="tech-tag">MySQL</span>
+                    <span class="tech-tag">JSON</span>
+                    <span class="tech-tag">Postman</span>
+                    <span class="tech-tag">REST API</span>
                 </div>
             </div>
-
-            <div class="modal-footer">
-                <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-figma-techsolutions" class="btn-project">Voir le prototype</a>
-                <a href="https://github.com/Sa6rinaa/figma-techsolutions" class="btn-github">Fichier Figma</a>
+            <div class="modal-section">
+                <h3>Compétences développées</h3>
+                <ul>
+                    <li>Conception d'architecture RESTful</li>
+                    <li>Gestion de bases de données relationnelles</li>
+                    <li>Validation et sécurisation des données</li>
+                    <li>Tests d'API avec Postman</li>
+                    <li>Documentation technique</li>
+                </ul>
             </div>
         </div>
-    </div>
-
-    <!-- Modal Projet 3 -->
-    <div id="modal-projet3" class="modal-overlay" onclick="closeModal(event, 'projet3')">
-        <div class="modal-content" onclick="event.stopPropagation()">
-            <div class="modal-header">
-                <button class="modal-close" onclick="closeModal(event, 'projet3')">×</button>
-                <h2>Atelier Accessibilité Web - RGAA 4.1.2</h2>
-                <p class="project-date">Projet de formation</p>
-            </div>
-            
-            <div class="modal-body">
-                <div class="modal-section">
-                    <h3>Description</h3>
-                    <p>Formation complète aux bonnes pratiques d'accessibilité web selon le RGAA 4.1.2 (Référentiel Général d'Amélioration de l'Accessibilité). Ce projet vise à rendre le web accessible à tous, y compris aux personnes en situation de handicap.</p>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Thématiques abordées</h3>
-                    <ul>
-                        <li>Sémantique HTML et structure logique des documents</li>
-                        <li>Navigation au clavier et gestion du focus</li>
-                        <li>ARIA (Accessible Rich Internet Applications)</li>
-                        <li>Contrastes et lisibilité des couleurs</li>
-                        <li>Alternatives textuelles pour les images</li>
-                        <li>Formulaires accessibles avec labels appropriés</li>
-                        <li>Compatibilité avec les lecteurs d'écran</li>
-                        <li>Responsive design et zoom</li>
-                    </ul>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Technologies utilisées</h3>
-                    <div class="modal-technologies">
-                        <span class="tech-tag">HTML5 sémantique</span>
-                        <span class="tech-tag">CSS3</span>
-                        <span class="tech-tag">JavaScript accessible</span>
-                        <span class="tech-tag">WAI-ARIA</span>
-                        <span class="tech-tag">WCAG 2.1</span>
-                        <span class="tech-tag">RGAA 4.1.2</span>
-                    </div>
-                </div>
-
-                <div class="modal-section">
-                    <h3>Compétences acquises</h3>
-                    <ul>
-                        <li>Audit d'accessibilité de sites web</li>
-                        <li>Correction des problèmes d'accessibilité</li>
-                        <li>Tests avec outils automatisés et manuels</li>
-                        <li>Utilisation de lecteurs d'écran (NVDA, JAWS)</li>
-                        <li>Documentation et reporting de conformité</li>
-                        <li>Sensibilisation aux besoins des utilisateurs</li>
-                    </ul>
-                </div>
-            </div>
-
-            <div class="modal-footer">
-                <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilite-rgaa" class="btn-project">Voir le projet</a>
-                <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilit-web-rgaa-4-1-2-Sa6rinaa" class="btn-github">Documentation</a>
-            </div>
+        <div class="modal-footer">
+            <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn-project">Voir le projet en ligne</a>
+            <a href="https://github.com/BTS2-SIO-SLAM-LSW/mission-1-api-citations-Sa6rinaa" class="btn-github">Code source GitHub</a>
         </div>
     </div>
+</div>
 
+<div id="modal-projet2" class="modal-overlay" onclick="closeModal(event, 'projet2')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <button class="modal-close" onclick="closeModal(event, 'projet2')">×</button>
+            <h2>Atelier Figma TechSolutions</h2>
+            <p class="project-date">Septembre 2025</p>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>Description</h3>
+                <p>Projet de conception UX/UI complet pour un système de gestion de tickets IT destiné à l'entreprise fictive TechSolutions. Le projet suit une méthodologie professionnelle complète, de la recherche utilisateur au prototype interactif.</p>
+            </div>
+            <div class="modal-section">
+                <h3>Fonctionnalités principales</h3>
+                <ul>
+                    <li>Dashboard administrateur avec statistiques en temps réel</li>
+                    <li>Système de création et suivi de tickets</li>
+                    <li>Attribution et gestion des priorités</li>
+                    <li>Notifications et alertes</li>
+                    <li>Historique détaillé des interventions</li>
+                    <li>Interface responsive (desktop, tablette, mobile)</li>
+                    <li>Prototype interactif avec transitions animées</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>Technologies et méthodes</h3>
+                <div class="modal-technologies">
+                    <span class="tech-tag">Figma</span>
+                    <span class="tech-tag">Composants réutilisables</span>
+                    <span class="tech-tag">Auto-layout</span>
+                    <span class="tech-tag">Prototypage</span>
+                    <span class="tech-tag">Design System</span>
+                    <span class="tech-tag">UX Research</span>
+                </div>
+            </div>
+            <div class="modal-section">
+                <h3>Processus de conception</h3>
+                <ul>
+                    <li>Analyse des besoins utilisateurs et personas</li>
+                    <li>Architecture de l'information</li>
+                    <li>Wireframing et maquettes basse fidélité</li>
+                    <li>Design system et charte graphique</li>
+                    <li>Maquettes haute fidélité</li>
+                    <li>Prototype interactif et tests utilisateurs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-figma-techsolutions" class="btn-project">Voir le prototype</a>
+            <a href="https://github.com/Sa6rinaa/figma-techsolutions" class="btn-github">Fichier Figma</a>
+        </div>
+    </div>
+</div>
+
+<div id="modal-projet3" class="modal-overlay" onclick="closeModal(event, 'projet3')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <div class="modal-header">
+            <button class="modal-close" onclick="closeModal(event, 'projet3')">×</button>
+            <h2>Atelier Accessibilité Web - RGAA 4.1.2</h2>
+            <p class="project-date">Projet de formation</p>
+        </div>
+        <div class="modal-body">
+            <div class="modal-section">
+                <h3>Description</h3>
+                <p>Formation complète aux bonnes pratiques d'accessibilité web selon le RGAA 4.1.2. Ce projet vise à rendre le web accessible à tous, y compris aux personnes en situation de handicap.</p>
+            </div>
+            <div class="modal-section">
+                <h3>Thématiques abordées</h3>
+                <ul>
+                    <li>Sémantique HTML et structure logique des documents</li>
+                    <li>Navigation au clavier et gestion du focus</li>
+                    <li>ARIA (Accessible Rich Internet Applications)</li>
+                    <li>Contrastes et lisibilité des couleurs</li>
+                    <li>Alternatives textuelles pour les images</li>
+                    <li>Formulaires accessibles avec labels appropriés</li>
+                    <li>Compatibilité avec les lecteurs d'écran</li>
+                    <li>Responsive design et zoom</li>
+                </ul>
+            </div>
+            <div class="modal-section">
+                <h3>Technologies utilisées</h3>
+                <div class="modal-technologies">
+                    <span class="tech-tag">HTML5 sémantique</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript accessible</span>
+                    <span class="tech-tag">WAI-ARIA</span>
+                    <span class="tech-tag">WCAG 2.1</span>
+                    <span class="tech-tag">RGAA 4.1.2</span>
+                </div>
+            </div>
+            <div class="modal-section">
+                <h3>Compétences acquises</h3>
+                <ul>
+                    <li>Audit d'accessibilité de sites web</li>
+                    <li>Correction des problèmes d'accessibilité</li>
+                    <li>Tests avec outils automatisés et manuels</li>
+                    <li>Utilisation de lecteurs d'écran (NVDA, JAWS)</li>
+                    <li>Sensibilisation aux besoins des utilisateurs</li>
+                </ul>
+            </div>
+        </div>
+        <div class="modal-footer">
+            <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilite-rgaa" class="btn-project">Voir le projet</a>
+            <a href="https://github.com/BTS2-SIO-SLAM-LSW/atelier-accessibilit-web-rgaa-4-1-2-Sa6rinaa" class="btn-github">Documentation</a>
+        </div>
+    </div>
+</div>
 
      <!-- Section Veille Technologique -->
     <section id="veille" class="section-veille">
@@ -604,50 +616,65 @@ des besoins utilisateurs jusqu'au prototype interactif. </p>
     </section>
 
     <!-- Section Expérience -->
-    <section id="experience" class="section-experience">
-        <div class="container">
-            <div class="section-header">
-                <h2 class="section-title">Expérience Professionnelle</h2>
-            </div>
+  <section id="experience" class="section-experience">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title">Expérience Professionnelle</h2>
+        </div>
 
-            <div class="experience-timeline">
-                <article class="experience-card">
-                    <div class="experience-date">2024-2026</div>
-                    <div class="experience-content">
-                        <h3>Stage BTS SIO </h3>
-                        <p class="experience-company">YTTY</p>
-                        <p class="experience-poste"><strong>Poste :</strong> Développeur web </p>
-                        
-                        <h4>Missions réalisées :</h4>
-                        <ul class="experience-missions">
-                            <li>[Mission 1 - Description détaillée]</li>
-                            <li>[Mission 2 - Description détaillée]</li>
-                            <li>[Mission 3 - Description détaillée]</li>
-                        </ul>
+        <div class="experience-timeline experience-grid">
+            
+            <article class="experience-card">
+                <div class="experience-date">2024-2026</div>
+                <div class="experience-content">
+                    <h3>Stage BTS SIO</h3>
+                    <p class="experience-company">YTTY</p>
+                    <p class="experience-poste"><strong>Poste :</strong> Développeur web</p>
+                    
+                    <h4>Missions réalisées :</h4>
+                    <ul class="experience-missions">
+                        <li>[Mission 1 - Description détaillée]</li>
+                        <li>[Mission 2 - Description détaillée]</li>
+                        <li>[Mission 3 - Description détaillée]</li>
+                    </ul>
 
-                        <div class="experience-tech">
-                            <h4>Technologies utilisées :</h4>
-                            <div class="tech-tags">
-                                <span class="tech-tag">Typescript</span>
-                                <span class="tech-tag">[Tech 2]</span>
-                                <span class="tech-tag">[Tech 3]</span>
-                            </div>
-                        </div>
-
-                        <div class="experience-competences">
-                            <h4>Compétences développées :</h4>
-                            <ul>
-                                <li>[Compétence technique 1]</li>
-                                <li>[Compétence technique 2]</li>
-                                <li>[Soft skill 1]</li>
-                                <li>[Soft skill 2]</li>
-                            </ul>
+                    <div class="experience-tech">
+                        <h4>Technologies utilisées :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">Typescript</span>
+                            <span class="tech-tag">[Tech 2]</span>
                         </div>
                     </div>
-                </article>
-            </div>
+                </div>
+            </article>
+
+            <article class="experience-card">
+                <div class="experience-date">2025</div>
+                <div class="experience-content">
+                    <h3>Stage BTS SIO</h3>
+                    <p class="experience-company">Nom Entreprise 2</p>
+                    <p class="experience-poste"><strong>Poste :</strong> Développeur logiciel</p>
+                    
+                    <h4>Missions réalisées :</h4>
+                    <ul class="experience-missions">
+                        <li>[Mission A - Description détaillée]</li>
+                        <li>[Mission B - Description détaillée]</li>
+                        <li>[Mission C - Description détaillée]</li>
+                    </ul>
+
+                    <div class="experience-tech">
+                        <h4>Technologies utilisées :</h4>
+                        <div class="tech-tags">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                    </div>
+                </div>
+            </article>
+
         </div>
-    </section>
+    </div>
+</section>
 
 
 

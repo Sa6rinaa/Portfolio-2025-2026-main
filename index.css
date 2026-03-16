@@ -1424,157 +1424,94 @@ section {
 /* ========================================
    OUTILS & TECHNOLOGIES – SKILLS SCROLLER
 ======================================== */
-.skills-wrapper {
-    width: 100%;
-    padding: 80px 0;
-    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
-    overflow: hidden;
-    position: relative;
+/* Section Outils & Méthodologies - Design Grille */
+.section-outils {
+    padding: 100px 0;
+    background-color: #f9f9f9;
 }
 
-.skills-wrapper::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.02) 0%, transparent 60%);
-    pointer-events: none;
+.outils-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
 }
 
-.skills-title {
-    font-weight: 800;
-    font-size: 2rem;
-    margin-bottom: 50px;
+.outil-card {
+    background: #ffffff;
+    padding: 40px 25px;
+    border-radius: 12px;
     text-align: center;
-    color: #2c3e50;
-    position: relative;
-    z-index: 1;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: all 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.02);
 }
 
-.skills-title::after {
-    content: '';
-    position: absolute;
-    bottom: -12px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 4px;
-    background: linear-gradient(135deg, #000000 0%, #333333 100%);
-    border-radius: 2px;
+.outil-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-color: #0066ff; /* Bordure bleue au survol */
 }
 
-.skills-scroller {
+/* Le Cercle Bleu */
+.outil-icon-circle {
+    width: 85px;
+    height: 85px;
+    border: 3px solid #0066ff; /* Le bleu de votre screen */
+    border-radius: 50%;
+    margin: 0 auto 20px;
     display: flex;
-    gap: 50px;
-    white-space: nowrap;
-    animation: scroll 25s linear infinite;
-    padding: 20px 0;
-}
-
-.skills-scroller:hover {
-    animation-play-state: paused;
-}
-
-.skill-item {
-    display: inline-flex;
     align-items: center;
-    gap: 12px;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+/* Animation du cercle au survol */
+.outil-card:hover .outil-icon-circle {
+    background-color: #0066ff;
+}
+
+/* Images à l'intérieur du cercle */
+.outil-icon-circle img {
+    width: 40px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+.outil-card:hover .outil-icon-circle img {
+    filter: brightness(0) invert(1); /* Devient blanc au survol */
+}
+
+/* Texte à l'intérieur du cercle (MVC, API...) */
+.icon-text {
+    font-weight: 800;
     font-size: 1.1rem;
-    font-weight: 600;
+    color: #0066ff;
+    transition: all 0.3s ease;
+}
+
+.outil-card:hover .icon-text {
+    color: #ffffff;
+}
+
+/* Textes de la carte */
+.outil-card h3 {
+    font-size: 1.2rem;
+    font-weight: 700;
     color: #2c3e50;
-    padding: 15px 25px;
-    background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(248, 249, 250, 0.85));
-    backdrop-filter: blur(10px);
-    border-radius: 50px;
-    border: 2px solid rgba(255, 255, 255, 0.5);
-    box-shadow: 
-        0 8px 20px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.8);
-    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    position: relative;
+    margin-bottom: 12px;
+    text-transform: uppercase;
 }
 
-.skill-item::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    border-radius: 50px;
-    background: linear-gradient(135deg, rgba(0, 0, 0, 0.05), transparent);
-    opacity: 0;
-    transition: opacity 0.3s;
+.outil-card p {
+    font-size: 0.95rem;
+    color: #666;
+    line-height: 1.6;
 }
 
-.skill-item:hover {
-    transform: translateY(-5px) scale(1.05);
-    box-shadow: 
-        0 15px 35px rgba(0, 0, 0, 0.15),
-        0 0 0 1px rgba(255, 255, 255, 0.9),
-        inset 0 1px 0 rgba(255, 255, 255, 1);
-    border-color: rgba(0, 0, 0, 0.1);
+.outil-card p strong {
+    color: #333;
 }
-
-.skill-item:hover::before {
-    opacity: 1;
-}
-
-.skill-item img {
-    height: 32px;
-    width: auto;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
-    transition: transform 0.3s;
-}
-
-.skill-item:hover img {
-    transform: scale(1.1);
-}
-
-.skill-icon {
-    font-size: 1.5rem;
-    filter: drop-shadow(0 2px 5px rgba(0, 0, 0, 0.1));
-    transition: transform 0.3s;
-}
-
-.skill-item:hover .skill-icon {
-    transform: rotate(10deg) scale(1.1);
-}
-
-/* Animation défilement */
-@keyframes scroll {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-}
-
-/* Responsive */
-@media(max-width: 768px) {
-    .skills-wrapper {
-        padding: 60px 0;
-    }
-    
-    .skills-title {
-        font-size: 1.7rem;
-        margin-bottom: 40px;
-    }
-    
-    .skills-scroller {
-        gap: 35px;
-    }
-    
-    .skill-item {
-        font-size: 1rem;
-        padding: 12px 20px;
-    }
-    
-    .skill-item img {
-        height: 28px;
-    }
-    
-    .skill-icon {
-        font-size: 1.3rem;
-    }
-}
-
 /* ========================================
    SECTION CERTIFICATIONS - VERSION COMPLÈTE & CORRIGÉE
 ======================================== */
@@ -1995,6 +1932,8 @@ section {
 
 .section-projets .section-subtitle {
     color: #aaa;
+    padding: 180px 0; 
+    background: #000; /* Exemple de couleur si vous voulez voir la zone */
 }
 
 .projets-grid {
@@ -2211,74 +2150,83 @@ section {
 }
 
 /* Arrows - Contrôles du carousel */
-.carousel-controls {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-    margin-top: 30px;
-    position: relative;
-    z-index: 1;
+/* Espace sous le carrousel pour ne pas coller au texte du bas */
+/* Arrows - Contrôles du carousel */
+
+.section-projets .container {
+    position: relative; /* Indispensable pour l'ancrage des boutons */
+    max-width: 1400px; 
+    margin: 0 auto;
+    padding: 0 50px; /* Ajoute un espace pour que les boutons ne cachent pas le texte */
 }
 
+.carousel-controls {
+    display: flex;
+    justify-content: space-between; /* Un à gauche, un à droite */
+    align-items: center;
+    position: absolute;
+    top: 30%;
+    left: -30px; /* On le fait sortir un peu à gauche */
+    right: -30px; /* On le fait sortir un peu à droite */
+    transform: translateY(-50%);
+    pointer-events: none; /* Pour ne pas bloquer le carrousel */
+    z-index: 100;
+}
 .carousel-btn {
-    background: linear-gradient(145deg, #2a2a2a, #1a1a1a);
-    border: 2px solid rgba(255,255,255,0.2);
-    color: #fff;
-    padding: 15px 25px;
-    border-radius: 50px;
+    pointer-events: auto; /* On réactive le clic sur les boutons uniquement */
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(30, 30, 30, 0.9);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
-    font-size: 1.2rem;
-    font-weight: 700;
-    transition: all .3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-    box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+/* Bouton Gauche */
+.carousel-btn:first-child {
+    left: 10px; /* Ajustez selon vos préférences */
+}
+
+/* Bouton Droit */
+.carousel-btn:last-child {
+    right: 10px; /* Ajustez selon vos préférences */
 }
 
 .carousel-btn:hover {
-    background: linear-gradient(145deg, #ffffff, #e0e0e0);
-    color: #000;
-    border-color: #fff;
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(255,255,255,0.2);
+    background: #ffffff;
+    color: #000000;
+    transform: scale(1.1);
+}
+/* Style pour le texte/image qui se retrouve en bas */
+.projet-image-placeholder {
+    text-align: center;
+    background: #000; /* Le fond noir de votre screen */
+    padding: 40px;
+    border-radius: 20px;
+    color: #fff;
+    margin-top: 20px;
 }
 
-/* Responsive Projets */
-@media(max-width: 768px) {
-    .section-projets {
-        padding: 80px 20px;
+@media (max-width: 768px) {
+    .carousel-controls {
+        position: static;
+        transform: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        margin-top: 20px;
     }
     
-    .projet-card {
-        min-width: 320px;
-    }
-    
-    .projet-content {
-        padding: 25px 20px;
-    }
-    
-    .projet-title {
-        font-size: 1.3rem;
-    }
-    
-    .projet-links {
-        flex-direction: column;
-    }
-    
-    .projet-links a {
-        width: 100%;
+    .section-projets .container {
+        padding: 0 15px;
     }
 }
-
-@media(max-width: 480px) {
-    .projet-card {
-        min-width: 280px;
-    }
-    
-    .carousel-btn {
-        padding: 12px 20px;
-        font-size: 1rem;
-    }
-}
-
 
   /* ===== MODAL - NOUVEAU ===== */
         .modal-overlay {
@@ -2832,30 +2780,24 @@ section {
 
 /* Timeline */
 .experience-timeline {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    max-width: 900px;
+    display: grid;
+    /* Crée 2 colonnes égales sur grand écran */
+    grid-template-columns: 1fr 1fr; 
+    gap: 30px;
+    /* On augmente la largeur max pour que 2 cartes tiennent bien */
+    max-width: 1200px; 
     margin: 0 auto;
     position: relative;
-}
-
-/* Ligne verticale de la timeline */
+}/* On cache la ligne verticale */
 .experience-timeline::before {
-    content: '';
-    position: absolute;
-    left: 30px;
-    top: 30px;
-    bottom: 30px;
-    width: 3px;
-    background: linear-gradient(180deg, var(--gradient), rgba(0,0,0,0.1));
-    border-radius: 2px;
+    display: none;
 }
 
+/* On ajuste la carte : on retire le padding de 80px à gauche pour centrer le texte */
 .experience-card {
     background: linear-gradient(145deg, rgba(255,255,255,0.98), rgba(248,249,250,0.95));
     backdrop-filter: blur(10px);
-    padding: 35px 35px 35px 80px;
+    padding: 35px; /* Padding uniforme */
     border-radius: 25px;
     box-shadow: 0 15px 35px rgba(0,0,0,0.08);
     border: 1px solid rgba(255,255,255,0.5);
@@ -2864,19 +2806,9 @@ section {
     overflow: hidden;
 }
 
-/* Point sur la timeline */
+/* On cache le petit rond de la timeline */
 .experience-card::before {
-    content: '';
-    position: absolute;
-    left: -8px;
-    top: 45px;
-    width: 20px;
-    height: 20px;
-    background: var(--gradient);
-    border-radius: 50%;
-    border: 4px solid #fff;
-    box-shadow: 0 0 0 3px rgba(0,0,0,0.1);
-    z-index: 2;
+    display: none;
 }
 
 .experience-card::after {
